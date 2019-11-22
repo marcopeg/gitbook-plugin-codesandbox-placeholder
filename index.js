@@ -43,7 +43,7 @@ module.exports = {
             const attributes = [
                 `src="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
                 `title="${getArg('title', 'CodeSandbox.io')}"`,
-                `style="width: ${getArg(width, '100%')}; height:${getArg('height', '500px')}; ${getArg('style', 'border:0; border-radius: 4px; overflow:hidden;')}"`,
+                `style="width: ${getArg('width', '100%')}; height:${getArg('height', '500px')}; ${getArg('style', 'border:0; border-radius: 4px; overflow:hidden;')}"`,
                 'allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"',
                 'sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"',
             ]
