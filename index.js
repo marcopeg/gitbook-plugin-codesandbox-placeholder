@@ -16,7 +16,7 @@ module.exports = {
 
             const getParam = (name, defaultValue = null) => {
                 const value = getArg(name, defaultValue)
-                return value ? `${name}=${$value}` : null
+                return value ? `${name}=${value}` : null
             }
 
             const srcUrl = `https://codesandbox.io/embed/${args.id}`
