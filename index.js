@@ -40,6 +40,24 @@ module.exports = {
                 getParam('theme'),
             ]
 
+            if (args.link) {
+                const attributes = [
+                    `href="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
+                    `title="${getArg('title', 'Open CodeSandbox')}"`,
+                    `target="${getArg('target', '_blank')}"`,
+                ]
+                return `<a ${attributes.join(' ')}>${args.link}</a>`
+            }
+            
+            if (args.button) {
+                const attributes = [
+                    `href="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
+                    `title="${args.button}"`,
+                    `target="${getArg('target', '_blank')}"`,
+                ]
+                return `<a ${attributes.join(' ')}><img alt="Edit pure-components-exercise" src="https://codesandbox.io/static/img/play-codesandbox.svg"></a>`
+            }
+
             const attributes = [
                 `src="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
                 `title="${getArg('title', 'CodeSandbox.io')}"`,

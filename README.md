@@ -23,10 +23,26 @@ Super duper basic CodeSandbox integration for Gitbook 3.x.
 
 ### Embed your CodeSandbox:
 
+Embed a working Link to a CodeSandbox:
+
 ```
 {% codesandbox id="react-101-mzkeh" %}{% endcodesandbox %}
 
 {% codesandbox id="react-101-mzkeh", height="400px", view="editor" %}{% endcodesandbox %}
+```
+
+Link to a CodeSandbox:
+
+```
+{% codesandbox id="mzkeh", link="Click here to go to open the Sandbox", title="custom title", target="_self" %}{% endcodesandbox %}
+```
+
+_Default targets to `_blank`._
+
+Add a CodeSandbox Button:
+
+```
+{% codesandbox id="mzkeh", button="1" %}{% endcodesandbox %}
 ```
 
 ### Otions & Values
