@@ -42,7 +42,7 @@ module.exports = {
 
             if (args.link) {
                 const attributes = [
-                    `href="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
+                    `href="${srcUrl}"`,
                     `title="${getArg('title', 'Open CodeSandbox')}"`,
                     `target="${getArg('target', '_blank')}"`,
                 ]
@@ -51,7 +51,7 @@ module.exports = {
             
             if (args.button) {
                 const attributes = [
-                    `href="${srcUrl}?${srcParams.filter($ => $ !== null).join('&')}"`,
+                    `href="${srcUrl}"`,
                     `title="${args.button}"`,
                     `target="${getArg('target', '_blank')}"`,
                 ]
